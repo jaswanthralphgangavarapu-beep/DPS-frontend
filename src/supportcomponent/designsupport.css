@@ -1,0 +1,330 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.luxury-support {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* Hero */
+.lux-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2848&auto=format&fit=crop') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lux-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1), transparent 70%);
+}
+
+.lux-content {
+  position: relative;
+  z-index: 2;
+}
+
+.lux-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #d4af37;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.lux-subtitle {
+  font-size: 1.4rem;
+  margin-top: 16px;
+  color: #aaa;
+  letter-spacing: 2px;
+}
+
+.glow-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  box-shadow: 0 0 20px #d4af37;
+}
+
+/* Contact Cards */
+.lux-contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0f0f0f, #0a0a0a);
+}
+
+.lux-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.lux-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lux-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.lux-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+}
+
+.gold-border {
+  border: 1px solid #d4af37 !important;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 16px 0;
+  color: #fff;
+}
+
+.highlight {
+  font-size: bold 1.5rem;
+  color: #d4af37;
+  margin: 12px 0;
+}
+
+.gold-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.chat-btn {
+  margin-top: 16px;
+  padding: 12px 32px;
+  background: #d4af37;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* FAQ Section */
+.lux-faq-section {
+  padding: 120px 20px;
+  background: #0a0a0a;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #d4af37;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.category-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cat-btn {
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #ccc;
+  padding: 20px 24px;
+  text-align: left;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.cat-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: #d4af37;
+  color: #fff;
+}
+
+.cat-btn.active {
+  background: linear-gradient(135deg, #d4af37, #b8972e);
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.cat-icon {
+  margin-right: 14px;
+  font-size: 1.3em;
+}
+
+.active-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #fff;
+}
+
+/* FAQ Items */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.faq-item {
+  background: rgba(20,20,20,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 28px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.arrow {
+  font-size: 1.4rem;
+  transition: transform 0.4s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 28px 32px;
+  color: #bbbbbb;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.animate-in {
+  animation: fadeSlide 0.5s ease-out;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating Chat */
+.floating-chat {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #d4af37, #b8972e);
+  color: #000;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.floating-chat:hover {
+  transform: scale(1.1);
+  width: 180px;
+  border-radius: 50px;
+}
+
+.chat-text {
+  display: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.floating-chat:hover .chat-text {
+  display: block;
+}
+
+.pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+  animation: pulseAnim 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(1); opacity: 0.6; }
+  70% { transform: scale(1.4); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faq-layout { grid-template-columns: 1fr; }
+  .lux-title { font-size: 3.5rem; }
+}
+
+@media (max-width: 768px) {
+  .lux-grid { grid-template-columns: 1fr; }
+  .lux-title { font-size: 2.8rem; }
+  .section-title { font-size: 2.2rem; }
+}

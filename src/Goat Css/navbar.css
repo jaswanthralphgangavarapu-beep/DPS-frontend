@@ -1,0 +1,966 @@
+ /* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/@phosphor-icons/web@2.1.0/src/css/phosphor.css');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar-container {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix it at the top */
+  top: 0; /* Ensure it starts from the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.top-nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.more-brands-btn {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.arrow-down {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.delivery-location {
+  display: flex;
+  align-items: center;
+}
+
+.add-location-btn {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #00305b;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sale-link {
+  color: #f00;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  flex: 1;
+  color: white;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.express-delivery {
+  display: flex;
+  align-items: center;
+  background-color: #FFD700;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.delivery-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.delivery-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.aditya-birla img {
+  height: 35px;
+}
+
+/* Banner Styles */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.banner-heading {
+  font-size: 4rem;
+  color: #00305b;
+  margin-bottom: 30px;
+}
+
+.shop-now-btn {
+  background-color: #00305b;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.banner-navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-arrow {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.stag-logo-watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../assets/stag-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Sidebar Styles */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+}
+
+.sidebar {
+  width: 320px;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  color: white;
+}
+
+.back-btn {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #00305b;
+}
+
+.sidebar-logo img {
+  height: 25px;
+   
+}
+
+.sidebar-welcome {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.welcome-text h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.welcome-text p {
+  font-size: 12px;
+  color: #666;
+}
+
+.login-button {
+  background-color: #00305b;
+  color: white;
+  width: 90%;
+  margin: 15px auto;
+  display: block;
+  padding: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.express-delivery-banner {
+  display: flex;
+  align-items: center;
+  background-color: #FFD700;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.delivery-text h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.delivery-text p {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.small-icon {
+  margin-left: 5px;
+}
+
+.delivery-location {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.add-location {
+  color: #00305b;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  color: #666;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .banner-heading {
+    font-size: 3rem;
+  }
+  
+  .nav-links a {
+    font-size: 12px;
+  }
+  
+  .nav-links li {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  .top-nav-right {
+    display: none;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: block;
+    margin-right: 15px;
+  }
+  
+  .search-container {
+    margin: 0 10px;
+  }
+  
+  .express-delivery {
+    display: none;
+  }
+  
+  .aditya-birla {
+    margin-left: auto;
+  }
+  
+  .aditya-birla img {
+    height: 25px;
+  }
+  
+  .banner-content {
+    left: 10%;
+  }
+  
+  .banner-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-location {
+    display: none;
+  }
+  
+  .logo-container {
+    margin-right: 10px;
+  }
+  
+  .logo {
+    height: 30px;
+  }
+  
+  .banner-container {
+    height: 400px;
+  }
+  
+  .banner-heading {
+    font-size: 2rem;
+  }
+  
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+
+/*product grid here css*/
+.App-header {
+  background-color: #bcbcbc;
+  padding: 16px;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+   font-family: "Georgia", serif;
+}
+
+.App-header h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+main {
+  padding: 16px 0;
+  background-image: url('/my-react-app/src/assets/carousel4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 20px;
+  }
+  
+  main {
+    padding: 12px 0;
+  }
+}
+
+
+/* Toast Container Custom Styles */
+.Toastify__toast--success {
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+}
+
+.Toastify__progress-bar--success {
+  background: #4caf50 !important;
+}
+
+
+
+
+
+ 
+
+ 
+
+.more-brands-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-cart-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+}
+
+.top-nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.top-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  font-size: 14px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-cart-btn {
+    display: block;
+  }
+
+  .top-nav-right {
+    gap: 10px;
+  }
+
+  .top-nav-btn {
+    font-size: 12px;
+  }
+
+  .top-nav-btn span {
+    display: none;
+  }
+
+  .top-nav-right .cart {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav {
+    padding: 8px 12px;
+  }
+
+  .more-brands-btn {
+    font-size: 12px;
+  }
+
+  .delivery-location {
+    display: none;
+  }
+
+  .top-nav-right .wishlist,
+  .top-nav-right .top-nav-btn:not(.cart) {
+    display: none;
+  }
+
+  .mobile-cart-btn {
+    font-size: 18px;
+  }
+}
+/* src/Goat Css/navbar.css */
+
+/* Your existing CSS remains 100% unchanged – just add this at the bottom */
+
+/* ==================== NEW MODERN BAG POPUP ==================== */
+.bag-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.bag-popup-modern {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  max-height: 92vh;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.bag-header-modern {
+  padding: 18px 20px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-header-modern h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.close-btn-modern {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bag-items-modern {
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 0 12px;
+}
+
+.empty-bag-modern {
+  text-align: center;
+  padding: 70px 20px;
+  color: #999;
+}
+
+.empty-bag-modern p {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.bag-item-modern {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.item-img-modern {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #f0f0f0;
+}
+
+.item-info-modern h4 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.size-text {
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.qty-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.qty-controls-modern {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f9f9f9;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+}
+
+.qty-controls-modern button {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1.5px solid #000;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-controls-modern span {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.price-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.remove-btn-modern {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ff4444;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.bag-footer-modern {
+  padding: 20px;
+  background: #000;
+  color: white;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.checkout-btn-modern {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+}
+
+.checkout-btn-modern:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.secure-text {
+  text-align: center;
+  font-size: 11px;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Scrollbar */
+.bag-items-modern::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bag-items-modern::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.bag-items-modern::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobile Fixes */
+@media (max-width: 480px) {
+  .bag-popup {
+    border-radius: 20px;
+    max-height: 95vh;
+  }
+  .bag-header {
+    padding: 16px;
+  }
+  .bag-header h2 {
+    font-size: 20px;
+  }
+  .item-img {
+    width: 80px;
+    height: 80px;
+  }
+  .qty-controls button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+
+
+ /* ====== LOGIN DROPDOWN WRAPPER ====== */
+.login-dropdown-wrapper {
+  position: fixed;
+  top: 65px;
+  right: 25px;
+  z-index: 9999;
+}
+
+/* ====== POPUP CONTAINER ====== */
+.login-dropdown-popup {
+  width: 330px;
+  background: #faf5ef; /* soft luxury cream */
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+  animation: dropdownSlide 0.28s ease-out;
+}
+
+@keyframes dropdownSlide {
+  from { opacity: 0; transform: translateY(-20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ====== POPUP CONTENT ====== */
+.login-dropdown-content {
+  padding: 25px 22px;
+  text-align: center;
+}
+
+/* TITLE */
+.login-dropdown-content h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a2a2a;
+  letter-spacing: 0.5px;
+}
+
+/* SUBTEXT */
+.login-dropdown-content p {
+  margin: 6px 0 20px 0;
+  color: #6a6a6a;
+  font-size: 13px;
+}
+
+/* ====== SIGNUP BUTTON ====== */
+.login-signup-btn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+.login-signup-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* ====== LINKS ====== */
+.login-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* BUTTON ITEM */
+.login-link-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #2b2b2b;
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.login-link-item:hover {
+  background: rgba(0,0,0,0.05);
+  transform: translateX(4px);
+}
+
+/* ICONS */
+.login-icon {
+  font-size: 18px;
+  min-width: 24px;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.login-link-item:hover .login-icon {
+  color: #000;
+}
+
+.designcolordrop{
+  background: #FFFDD0;
+}

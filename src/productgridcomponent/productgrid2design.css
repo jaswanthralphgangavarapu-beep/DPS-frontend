@@ -1,0 +1,184 @@
+/* ProductGrid.css */
+
+.productgridtwo-liondrip {
+  background-color: #bcbcbc;
+  padding: 40px 20px;
+  min-height: 100vh;
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.productgridtwo-liondrip.animateliondrip {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.productgrid-liondrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.productcard-liondrip {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.productcard-liondrip:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
+.productimagewrapper-liondrip {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.productimage-liondrip {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productcard-liondrip:hover .productimage-liondrip {
+  transform: scale(1.1); /* Zoom in image on card hover */
+}
+
+.badgeliondrip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.hearticon-liondrip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.hearticon-liondrip:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.colorswatches-liondrip {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+.swatchliondrip {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.swatchliondrip:hover {
+  transform: scale(1.2); /* Zoom out effect on swatch hover */
+}
+
+.producttitle-liondrip {
+  font-size: 14px;
+  margin: 0 15px 10px;
+  color: #333333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.productprice-liondrip {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 15px 15px;
+  text-align: left;
+}
+
+.backtotopliondrip {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.backtotopliondrip:hover {
+  background: #333333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .productgrid-liondrip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productgrid-liondrip {
+    grid-template-columns: 1fr;
+  }
+
+  .productimagewrapper-liondrip {
+    height: 250px;
+  }
+
+  .producttitle-liondrip {
+    font-size: 12px;
+  }
+
+  .productprice-liondrip {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productgridtwo-liondrip {
+    padding: 20px 10px;
+  }
+
+  .colorswatches-liondrip {
+    gap: 3px;
+  }
+
+  .swatchliondrip {
+    width: 15px;
+    height: 15px;
+  }
+}

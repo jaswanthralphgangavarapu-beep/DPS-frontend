@@ -1,0 +1,435 @@
+.about-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: "Geist", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  padding: 120px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><circle cx="600" cy="300" r="400" stroke="rgba(255,255,255,0.02)" stroke-width="1" fill="none"/><circle cx="600" cy="300" r="300" stroke="rgba(255,255,255,0.02)" stroke-width="1" fill="none"/></svg>');
+  background-size: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  margin: 30px auto;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Beliefs Section */
+.beliefs-section {
+  padding: 100px 40px;
+  background-color: #ffffff;
+}
+
+.beliefs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.beliefs-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.belief-tagline {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666666;
+  margin: 0 0 60px 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.belief-card {
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.belief-card:hover {
+  border-color: #1a1a1a;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.belief-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.belief-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.belief-card p {
+  font-size: 0.95rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Tabs Section */
+.tabs-section {
+  padding: 100px 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+.tabs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #e5e5e5;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #999999;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.tab-button:hover {
+  color: #1a1a1a;
+}
+
+.tab-button.active {
+  color: #1a1a1a;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #1a1a1a;
+}
+
+.tab-icon {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.tab-label {
+  font-size: 0.9rem;
+}
+
+.tabs-content {
+  min-height: 400px;
+}
+
+.tab-pane {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-pane h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.tab-pane p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555555;
+  margin: 0 0 20px 0;
+}
+
+.tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-box,
+.philosophy-highlight {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 30px;
+  margin: 30px 0 0 0;
+  border-radius: 8px;
+  border-left: 4px solid #ffffff;
+}
+
+.highlight-box p,
+.philosophy-highlight p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.highlight-box p + p,
+.philosophy-highlight p + p {
+  margin-top: 10px;
+}
+
+.story-quote {
+  font-style: italic;
+  color: #666666;
+  margin-top: 30px !important;
+  font-size: 1.05rem;
+}
+
+/* Collections Section */
+.collections-section {
+  padding: 100px 40px;
+  background-color: #ffffff;
+}
+
+.collections-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 60px 0;
+  letter-spacing: -0.02em;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-item {
+  padding: 35px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.collection-item:hover {
+  border-color: #1a1a1a;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+.collection-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+  color: #1a1a1a;
+}
+
+.collection-item p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.about-cta {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.01em;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 30px 0;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 15px 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 20px;
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .beliefs-section,
+  .tabs-section,
+  .collections-section,
+  .about-cta {
+    padding: 60px 20px;
+  }
+
+  .beliefs-content h2,
+  .collections-section h2,
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .beliefs-grid {
+    gap: 20px;
+  }
+
+  .belief-card {
+    padding: 25px;
+  }
+
+  .tabs-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-pane h3 {
+    font-size: 1.3rem;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    padding: 12px 40px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .tab-pane h3 {
+    font-size: 1.1rem;
+  }
+
+  .tab-pane p {
+    font-size: 0.9rem;
+  }
+}

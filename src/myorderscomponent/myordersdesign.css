@@ -1,0 +1,764 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container with Creative Class Names */
+.zebra-account_order_container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+/* Mobile Hamburger Header - Hidden on Desktop */
+.eagle-sidebar_header {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.penguin-hamburger_toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.lion-profile_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Sidebar Styling with Creative Names */
+.dolphin-sidebar_wrapper {
+  width: 300px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-right: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.tiger-profile_section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.whale-profile_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.panda-profile_info {
+  flex: 1;
+}
+
+.cheetah-profile_name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff6b35;
+  margin-bottom: 4px;
+}
+
+.leopard-profile_phone {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Menu Items with Creative Names */
+.butterfly-menu_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fox-menu_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+.fox-menu_item:hover {
+  background-color: #f0f0f0;
+}
+
+.fox-menu_active {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: #fff;
+}
+
+.fox-menu_logout {
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  color: #d32f2f;
+}
+
+.fox-menu_logout:hover {
+  background-color: #ffebee;
+}
+
+.bear-menu_icon {
+  font-size: 18px;
+}
+
+/* Main Content Area */
+.hawk-main_content {
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Breadcrumb with Creative Names */
+.parrot-breadcrumb {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.sparrow-breadcrumb_home {
+  color: #ff6b35;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.raven-breadcrumb_separator {
+  margin: 0 8px;
+}
+
+.owl-breadcrumb_current {
+  color: #333;
+}
+
+/* Account Specific Styles */
+.phoenix-account_header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.swan-greeting_text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6b35;
+  letter-spacing: 0.5px;
+}
+
+.peacock-account_section {
+  margin-bottom: 30px;
+}
+
+.crow-section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.crow-section_header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hummingbird-edit_btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hummingbird-edit_btn:hover {
+  color: #ff6b35;
+}
+
+.finch-info_card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.albatross-info_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.albatross-info_row:last-child {
+  margin-bottom: 0;
+}
+
+.canary-info_column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.canary-info_column label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cardinal-info_value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.flamingo-email_section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ostrich-verify_link {
+  color: #ff6b35;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ostrich-verify_link:hover {
+  text-decoration: underline;
+}
+
+/* Orders View Styles */
+.mongoose-orders_header {
+  margin-bottom: 24px;
+}
+
+.mongoose-orders_header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+/* Search Section */
+.jackal-search_section {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.badger-search_input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 40px 12px 16px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #666;
+  background-color: #fff;
+}
+
+.badger-search_input::placeholder {
+  color: #999;
+}
+
+.badger-search_input:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+.otter-search_icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Orders List Container */
+.squirrel-orders_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Order Card Styling */
+.koala-order_card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.koala-order_card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.giraffe-order_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.zebra-order_id_brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.porcupine-order_id {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.hedgehog-order_brand {
+  font-size: 12px;
+  color: #999;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.sloth-order_status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.sloth-status_delivered {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.sloth-status_in_transit {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.sloth-status_processing {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+/* Product Info */
+.antelope-order_product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.gazelle-product_name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wildebeest-product_amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff6b35;
+}
+
+/* Tracking Information */
+.camel-order_tracking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bison-tracking_item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.elk-tracking_label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.moose-tracking_number,
+.deer-tracking_date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Order Dates */
+.buffalo-order_dates {
+  font-size: 12px;
+  color: #999;
+}
+
+.impala-date_item {
+  display: inline-block;
+}
+
+/* Empty State */
+.vulture-empty_state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.lynx-empty_icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.meerkat-empty_text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.cobra-reset_filters_btn {
+  color: #ff6b35;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cobra-reset_filters_btn:hover {
+  background-color: #fff3e0;
+}
+
+/* Continue Shopping Button */
+.emu-continue_shopping_btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.emu-continue_shopping_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* Tablet Responsive - 1024px and below */
+@media (max-width: 1024px) {
+  .dolphin-sidebar_wrapper {
+    width: 250px;
+    padding: 20px 15px;
+  }
+
+  .hawk-main_content {
+    padding: 20px 25px;
+  }
+}
+
+/* Mobile Responsive - 768px and below */
+@media (max-width: 768px) {
+  .zebra-account_order_container {
+    flex-direction: column;
+  }
+
+  .eagle-sidebar_header {
+    display: flex;
+  }
+
+  .dolphin-sidebar_wrapper {
+    position: fixed;
+    left: -300px;
+    top: 56px;
+    width: 280px;
+    height: calc(100vh - 56px);
+    padding: 20px 15px;
+    transition: left 0.3s ease;
+    z-index: 99;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dolphin-sidebar_open {
+    left: 0;
+  }
+
+  .tiger-profile_section {
+    margin-bottom: 20px;
+  }
+
+  .hawk-main_content {
+    padding: 16px 12px;
+  }
+
+  .mongoose-orders_header h1 {
+    font-size: 24px;
+  }
+
+  .swan-greeting_text {
+    font-size: 26px;
+  }
+
+  .badger-search_input {
+    max-width: 100%;
+  }
+
+  .camel-order_tracking {
+    grid-template-columns: 1fr;
+  }
+
+  .albatross-info_row {
+    grid-template-columns: 1fr;
+  }
+
+  .koala-order_card {
+    padding: 12px;
+  }
+
+  .gazelle-product_name {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile Responsive - 480px and below */
+@media (max-width: 480px) {
+  .eagle-sidebar_header {
+    padding: 12px 12px;
+    gap: 12px;
+  }
+
+  .lion-profile_title {
+    font-size: 16px;
+  }
+
+  .penguin-hamburger_toggle {
+    font-size: 20px;
+  }
+
+  .dolphin-sidebar_wrapper {
+    width: 250px;
+    left: -250px;
+    top: 48px;
+    height: calc(100vh - 48px);
+    padding: 16px 12px;
+  }
+
+  .butterfly-menu_container {
+    gap: 8px;
+  }
+
+  .fox-menu_item {
+    padding: 10px 12px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .bear-menu_icon {
+    font-size: 16px;
+  }
+
+  .fox-menu_item span:last-child {
+    display: inline-block;
+  }
+
+  .whale-profile_avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .cheetah-profile_name {
+    font-size: 14px;
+  }
+
+  .leopard-profile_phone {
+    font-size: 11px;
+  }
+
+  .hawk-main_content {
+    padding: 12px 10px;
+  }
+
+  .mongoose-orders_header h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .swan-greeting_text {
+    font-size: 22px;
+  }
+
+  .badger-search_input {
+    max-width: 100%;
+    font-size: 12px;
+    padding: 10px 32px 10px 12px;
+  }
+
+  .otter-search_icon {
+    right: 10px;
+  }
+
+  .koala-order_card {
+    padding: 10px;
+  }
+
+  .porcupine-order_id {
+    font-size: 12px;
+  }
+
+  .gazelle-product_name {
+    font-size: 12px;
+  }
+
+  .wildebeest-product_amount {
+    font-size: 14px;
+  }
+
+  .moose-tracking_number,
+  .deer-tracking_date {
+    font-size: 13px;
+  }
+
+  .elk-tracking_label {
+    font-size: 11px;
+  }
+
+  .emu-continue_shopping_btn {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .crow-section_header h2 {
+    font-size: 14px;
+  }
+
+  .canary-info_column label {
+    font-size: 11px;
+  }
+
+  .cardinal-info_value {
+    font-size: 13px;
+  }
+
+  .parrot-breadcrumb {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Extra Small Mobile - 360px and below */
+@media (max-width: 360px) {
+  .lion-profile_title {
+    font-size: 14px;
+  }
+
+  .mongoose-orders_header h1 {
+    font-size: 18px;
+  }
+
+  .swan-greeting_text {
+    font-size: 20px;
+  }
+
+  .badger-search_input {
+    padding: 10px 28px 10px 10px;
+    font-size: 11px;
+  }
+
+  .koala-order_card {
+    padding: 8px;
+  }
+
+  .giraffe-order_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .camel-order_tracking {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .zebra-order_id_brand {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .emu-continue_shopping_btn {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+}
+/* Hide Navbar only on mobile when inside My Account / My Orders */
+@media (max-width: 768px) {
+  body.hide-navbar-on-mobile .navbar-container {
+    display: none !important;
+  }
+}

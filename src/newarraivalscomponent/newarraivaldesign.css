@@ -1,0 +1,561 @@
+/* ========================================
+   NEW ARRIVAL STYLES - Premium Streetwear
+   ======================================== */
+
+.new-arrival-container {
+  width: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.new-arrival-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.new-arrival-hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.new-arrival-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.new-arrival-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+  animation: slideInDown 0.8s ease-out;
+}
+
+.new-arrival-subtitle {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin: 0 0 30px 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.new-arrival-accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37 0%, #f0e68c 100%);
+  margin: 0 auto;
+  animation: scaleX 0.8s ease-out 0.5s both;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Tab Section */
+.new-arrival-tab-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.new-arrival-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0;
+}
+
+.new-arrival-tab-btn {
+  background: none;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.new-arrival-tab-btn:hover {
+  color: #1a1a1a;
+}
+
+.new-arrival-tab-active {
+  color: #1a1a1a;
+  border-bottom-color: #d4af37;
+}
+
+.new-arrival-tab-label {
+  font-size: 1.1rem;
+}
+
+.new-arrival-tab-count {
+  font-size: 0.85rem;
+  background: #e8e8e8;
+  padding: 3px 8px;
+  border-radius: 12px;
+  color: #666;
+}
+
+.new-arrival-tab-active .new-arrival-tab-count {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+/* Carousel Section */
+.new-arrival-carousel-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.new-arrival-carousel-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.new-arrival-arrow {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.new-arrival-arrow:hover {
+  background: #d4af37;
+  transform: scale(1.1);
+}
+
+.new-arrival-carousel {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.new-arrival-carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.new-arrival-slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+/* Product Card */
+.new-arrival-product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.new-arrival-product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.new-arrival-product-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.new-arrival-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.new-arrival-product-card:hover .new-arrival-product-image {
+  transform: scale(1.08);
+}
+
+.new-arrival-product-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.new-arrival-tag-new {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.new-arrival-tag-bestseller {
+  background: #f39c12;
+  color: #fff;
+}
+
+.new-arrival-tag-luxury {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+.new-arrival-product-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.new-arrival-product-card:hover .new-arrival-product-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.new-arrival-product-btn:hover {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+/* Product Info */
+.new-arrival-product-info {
+  padding: 20px;
+}
+
+.new-arrival-product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.new-arrival-product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin: 0 0 15px 0;
+}
+
+.new-arrival-add-to-cart {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.new-arrival-add-to-cart:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* Carousel Indicators */
+.new-arrival-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.new-arrival-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-arrival-indicator-active {
+  background: #d4af37;
+  width: 30px;
+  border-radius: 6px;
+}
+
+/* Brand Story Section */
+.new-arrival-brand-story {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.new-arrival-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.new-arrival-story-text {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.new-arrival-story-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.new-arrival-story-desc {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin: 0 0 30px 0;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.new-arrival-story-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.new-arrival-list-item {
+  font-size: 1rem;
+  color: #d4af37;
+  margin: 15px 0;
+  padding-left: 30px;
+  position: relative;
+  font-weight: 500;
+}
+
+.new-arrival-list-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.new-arrival-story-visual {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.05) 100%);
+  border-radius: 8px;
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  animation: scaleIn 0.8s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CTA Section */
+.new-arrival-cta-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.new-arrival-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  color: #1a1a1a;
+}
+
+.new-arrival-cta-btn {
+  background: #1a1a1a;
+  color: #fff;
+  border: 2px solid #1a1a1a;
+  padding: 16px 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.new-arrival-cta-btn:hover {
+  background: transparent;
+  color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .new-arrival-title {
+    font-size: 2.5rem;
+  }
+
+  .new-arrival-hero {
+    padding: 80px 20px;
+  }
+
+  .new-arrival-carousel-wrapper {
+    gap: 15px;
+  }
+
+  .new-arrival-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .new-arrival-slide {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .new-arrival-story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .new-arrival-story-title {
+    font-size: 1.8rem;
+  }
+
+  .new-arrival-tabs {
+    gap: 10px;
+  }
+
+  .new-arrival-tab-btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-arrival-title {
+    font-size: 1.8rem;
+  }
+
+  .new-arrival-subtitle {
+    font-size: 1rem;
+  }
+
+  .new-arrival-carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .new-arrival-arrow {
+    order: 2;
+    align-self: flex-end;
+  }
+
+  .new-arrival-carousel {
+    order: 1;
+    width: 100%;
+  }
+
+  .new-arrival-cta-title {
+    font-size: 1.5rem;
+  }
+}

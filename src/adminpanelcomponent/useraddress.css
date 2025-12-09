@@ -1,0 +1,171 @@
+/* Main Container */
+.address-container {
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a2b4c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Search Box */
+.search-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #dce3ed;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    background: #f8faff;
+}
+
+.search-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+    background: white;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #7b8a97;
+    pointer-events: none;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Table */
+.address-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+/* Table Header */
+.address-table th {
+    background: linear-gradient(90deg, #2575fc, #3f8efc);
+    color: white;
+    padding: 16px;
+    font-weight: 600;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Table Rows & Cells */
+.address-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eef2f7;
+    color: #2d3e50;
+}
+
+/* Hover Effect */
+.address-table tr:hover {
+    background: #f4f8ff;
+    transition: 0.2s;
+}
+
+/* Default Address Highlight */
+.default-row {
+    background-color: #eaf4ff !important;
+    border-left: 4px solid #2575fc;
+}
+
+/* Status Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.default {
+    background: #27ae60;
+    color: white;
+}
+
+.badge.normal {
+    background: #7f8c8d;
+    color: white;
+}
+
+/* Empty/No Data */
+.no-data {
+    text-align: center;
+    padding: 35px !important;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Summary Text */
+.summary {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Loading UI */
+.loading {
+    text-align: center;
+    font-size: 20px;
+    padding: 60px;
+    color: #2575fc;
+    font-weight: 600;
+}
+
+/* Error Message */
+.error {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    color: #c0392b;
+    background: #fdecea;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .address-table th,
+    .address-table td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

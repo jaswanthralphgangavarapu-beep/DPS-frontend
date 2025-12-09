@@ -1,0 +1,36 @@
+/* NewArrivals.css */
+.New-arrival-foodname {
+  background: #0a1f3d !important;
+  min-height: 100vh;
+  padding: 120px 40px 100px !important;
+}
+
+.New-arrival-foodname h1 {
+  color: #ffd700 !important;
+}
+
+.New-arrival-foodname > div:first-child > div:last-child span:first-child {
+  color: #fff !important;
+  border-bottom: 3px solid #ffd700 !important;
+}
+
+.New-arrival-foodname > div:first-child > div:last-child span:not(:first-child) {
+  color: #888 !important;
+}
+
+/* Horizontal Scroll Styling */
+.New-arrival-foodname > div:nth-child(2) {
+  display: flex !important;
+  overflow-x: auto !important;
+  gap: 1.5rem !important;
+  padding: 20px 2rem !important;
+}
+
+.New-arrival-foodname > div:nth-child(2)::-webkit-scrollbar {
+  height: 8px;
+}
+
+.New-arrival-foodname > div:nth-child(2)::-webkit-scrollbar-thumb {
+  background: #ffd700;
+  border-radius: 4px;
+}

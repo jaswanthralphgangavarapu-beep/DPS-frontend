@@ -1,0 +1,213 @@
+.product-grid-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  background-color: #bcbcbc;
+}
+
+.product-grid-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tabs-container {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.tab-button:hover {
+  color: #000;
+}
+
+.tab-button.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.product-grid-container.visible .product-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-wrapper {
+  position: relative;
+  background-color: #bcbcbc;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 12px;
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px 0;
+}
+
+.product-name {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+.product-prices {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.current-price {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.original-price {
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: line-through;
+}
+
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .tabs-container {
+    gap: 30px;
+    overflow-x: auto;
+  }
+
+  .tab-button {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+/* ✅ Updated mobile layout: show 2 products side by side */
+@media (max-width: 481px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+/* Out of Stock Styling */
+.product-card-wrapper.out-of-stock {
+  pointer-events: none;
+  opacity: 0.75;
+  position: relative;
+}
+
+.out-of-stock-ribbon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff2d2d;
+  color: white;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(255, 45, 45, 0.4);
+  transform: rotate(-12deg);
+}
+
+.product-image.dimmed {
+  filter: grayscale(80%) brightness(0.7);
+  transition: all 0.3s ease;
+}
+
+.sold-out-text {
+  margin-top: 8px;
+  color: #ff2d2d;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Optional: Keep discount badge hidden when out of stock */
+.product-card-wrapper.out-of-stock .discount-badge {
+  display: none;
+}

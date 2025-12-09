@@ -1,0 +1,185 @@
+.prod-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.prod-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod-main-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 2×2 Small Images Grid - EXACTLY LIKE YOUR IMAGE */
+.small-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.small-img-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.small-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.small-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* ORDER NOW Banner - EXACT MATCH */
+.order-now-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #000000ee, transparent);
+  color: white;
+  padding: 12px 20px;
+  font-weight: 800;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* Right Side */
+.prod-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.prod-price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0 25px;
+}
+
+.prod-mrp { font-size: 15px; color: #666; }
+.prod-mrp-strike { text-decoration: line-through; color: #999; font-size: 17px; }
+.prod-price { font-size: 32px; font-weight: 700; }
+.prod-off { color: #e74c3c; font-weight: 700; font-size: 18px; }
+
+.size-box p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.size-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.size-btn {
+  padding: 10px 20px;
+  border: 1.5px solid #999;
+  background: white;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.size-btn:hover { border-color: #000; }
+.size-btn.active {
+  background: #000;
+  color: white;
+  border-color: #000;
+}
+
+.size-chart {
+  color: #0071e3;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.buy-now {
+  background: #ffea00;
+  border: none;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.buy-now:hover {
+  background: #ffd000;
+}
+
+.add-bag {
+  margin-top: 15px;
+  padding: 16px;
+  width: 100%;
+  background: white;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-bag:hover {
+  border-color: #000;
+}
+
+/* Specs Grid - Full Width */
+.specs-grid {
+  grid-column: 1 / -1;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 60px;
+  font-size: 15px;
+}
+
+.specs-grid strong {
+  color: #000;
+  margin-right: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .prod-wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+  .small-images-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .prod-price { font-size: 28px; }
+}

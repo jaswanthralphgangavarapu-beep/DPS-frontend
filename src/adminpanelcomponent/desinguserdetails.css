@@ -1,0 +1,154 @@
+.user-detail-container {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #f5f6fa;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+/* ------- Header ------- */
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* ------- Search ------- */
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 45px 12px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* ------- Table ------- */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.luxury-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.luxury-table th {
+  background: #f0f0f0;
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+.luxury-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+/* ------- Row Hover ------- */
+.user-row:hover {
+  background: #fafafa;
+}
+
+/* Simple soft zebra effect */
+.user-row:nth-child(even) {
+  background: #fcfcfc;
+}
+
+/* User ID */
+.userid {
+  font-weight: 600;
+  font-family: monospace;
+  color: #333;
+}
+
+/* Name */
+.name {
+  font-weight: 500;
+}
+
+/* Status badge */
+.status {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.active {
+  background: #d8f5d0;
+  color: #1f7a1f;
+}
+
+/* No data */
+.no-results {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Loading / Error */
+.loading,
+.error-container {
+  text-align: center;
+  padding: 80px;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.retry-btn {
+  margin-top: 15px;
+  padding: 10px 24px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.retry-btn:hover {
+  background: #555;
+}
